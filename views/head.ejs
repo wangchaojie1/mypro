@@ -1,0 +1,66 @@
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFCLGJJ6C3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JFCLGJJ6C3');
+</script> -->
+<style>
+	.drawer_wrapper{
+		position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+		margin: 0;
+		z-index: -1;
+	}
+
+
+	.drawer_container{
+		position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+	}
+
+</style>
+<div class="h-header">
+		<div class="imglogo"></div>
+		<div class="spread">
+			<div class="line"></div>
+		</div>
+		<!-- <div class="drawer_wrapper">
+			<div class="drawer_container">
+			</div>
+		</div> -->
+		<ul class="ul">
+			<p class="closeBtn"> X </p>
+			<li><a href="/contact">CONTACT</a></li>
+			<li><a href="/partener">PARTENER</a></li>
+			<li><a href="/service">SERVICE & TRAINING</a></li>
+			<li class="prod"><a href="/product">PRODUCTS</a></li>
+			<li><a href="/">MAIN</a></li>
+		</ul>
+
+
+</div>
+<div class="panel">
+					  	 <ul>
+					  	 	 <% for(var i=0;i<productdata.length;i++){ %>
+					  	 	<li>
+					  	 		<dl>
+					  	 			<dt><a href="/product/<%= productdata[i].name.replace(/\s/g, '-') %>"><%= productdata[i].name %> </a></dt>
+					  	 			<% for(var j=0;j<productdata[i].list.length;j++){ %>
+					  	 			<dd><a href="/product/<%= productdata[i].name.replace(/\s/g, '-') %>/<%= productdata[i].list[j].list_name.replace(/\s/g, '-') %>"><%= productdata[i].list[j].list_name %> </a></dd>
+					  	 			<% } %>
+					  	 		</dl>
+					  	 	</li>
+					  	 	 <% } %>
+					  	 </ul>
+					  </div>

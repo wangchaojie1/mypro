@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= news.title %></title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="<%= news.title %>" />
+    <meta name="description" content="<%= news.title %>" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/resect.css" />
+    <link rel="stylesheet" href="/css/public.css" />
+    <link rel="stylesheet" href="/css/newsWatch.css" />
+    <link rel="stylesheet" href="/css/quill.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      sizes="any"
+      href="/img/r.svg"
+    />
+    <link rel="icon" sizes="any" href="/img/r.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "<%= news.title %>",
+        "image": ["https://www.rayvet.cn<%= cdn.newsUrl + news.titleImg %>"],
+        "datePublished": "<%= newsList[0].creationTimestamp %>",
+        "dateModified": "<%= newsList[0].creationTimestamp %>"
+      }
+    </script>
+  </head>
+  <body>
+    <%- include('head') %>
+    <div class="news_watch_top"></div>
+    <div class="news_watch_content">
+      <h1 class="title">
+        <%= news.title %>
+      </h1>
+      <div class="ql-editor news_content_warper">
+        <%- news.content %>
+      </div>
+    </div>
+    <%- include('foot') %>
+  </body>
+</html>

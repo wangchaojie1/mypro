@@ -1,0 +1,692 @@
+/*控制底部样式*/
+.b-footer {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  background: url("https://www.rayvet.cn/cdn-product/bottomback.jpg");
+  background-size: 100% 100%;
+  margin-top: 100px;
+  overflow: auto;
+}
+.navigation {
+  height: 400px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 230px;
+  float: left;
+  text-align: center;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+.navigation1 {
+  height: 400px;
+  width: 25%;
+  min-width: 230px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation img {
+  box-sizing: border-box;
+  width: 100px;
+  /* margin-bottom: 38px; */
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+}
+.navigation dl {
+  box-sizing: border-box;
+  width: 200px;
+  overflow: auto;
+}
+.navigation dl dt {
+  word-wrap: break-word;
+  text-align: left;
+  line-height: 30px;
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  float: left;
+}
+.navigation dl dd {
+  margin-left: 0;
+  width: 150px;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: left;
+  word-wrap: break-word;
+  color: rgb(150, 150, 150);
+}
+.navigation1 h3 {
+  height: 40px;
+  line-height: 40px;
+  color: rgb(150, 150, 150);
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+}
+.navigation1 ul {
+  margin: 0;
+  box-sizing: border-box;
+  width: 120px;
+  height: 220px;
+  text-align: center;
+}
+.navigation1 li {
+  list-style: none;
+  font-size: 13px;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+.navigation1 li a {
+  color: rgb(150, 150, 150);
+}
+.navigation2 {
+  height: 400px;
+  width: 25%;
+  min-width: 230px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation2 h3 {
+  height: 40px;
+  line-height: 40px;
+  color: rgb(150, 150, 150);
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+.navigation2 ul {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 220px;
+  text-align: center;
+}
+.navigation2 li {
+  list-style: none;
+  font-size: 13px;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  color: rgb(150, 150, 150);
+  float: left;
+}
+.navigation2 li a {
+  color: rgb(150, 150, 150);
+}
+.navigation1 li a:hover {
+  font-size: 14px;
+  color: rgb(81, 195, 251);
+}
+.navigation2 li a:hover {
+  font-size: 14px;
+  color: rgb(81, 195, 251);
+}
+.navigation3 {
+  height: 400px;
+  width: 25%;
+  min-width: 230px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation3 h3 {
+  height: 40px;
+  line-height: 40px;
+  color: rgb(150, 150, 150);
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+.svg_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+.svg_icon:hover {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+/*控制响应按钮样式*/
+.panel {
+  z-index: 50;
+  transition: 0.3s;
+  display: none;
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  top: 110px;
+  margin-left: -35%;
+  background: rgba(255, 255, 255, 0.6);
+}
+.panel ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.panel li {
+  float: left;
+  text-align: left;
+  color: black;
+  margin: 20px 0;
+  box-sizing: border-box;
+  width: 33.3%;
+}
+.panel li dd {
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.panel li dt {
+  font-weight: 600;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+
+/*控制表单样式*/
+.message {
+  overflow: auto;
+  margin: 50px 10% 0;
+  box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  position: relative;
+}
+.message div {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.message label {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 30px;
+  float: left;
+  width: 25%;
+  height: 30px;
+}
+.message input {
+  font-size: 15px;
+  margin-top: 30px;
+  float: left;
+  width: 65%;
+  height: 30px;
+}
+.message textarea {
+  line-height: 25px;
+  font-size: 20px;
+  margin-top: 30px;
+  width: 70%;
+  height: 200px;
+  float: left;
+}
+strong {
+  color: red;
+}
+.submit {
+  margin: 20px 25%;
+  display: block;
+  width: 50%;
+  line-height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  float: left;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.submit:hover {
+  background: black;
+  color: white;
+}
+.message p {
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 30px;
+  text-align: center;
+  margin: 20px auto;
+  color: blue;
+}
+.message .me-warp {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: white;
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+  padding: 20% 20%;
+  font-size: 20px;
+}
+.form-tip {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: rgb(81, 195, 251);
+  font-size: 20px;
+}
+.svg_ruige {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .message div {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .form-tip {
+    padding: 10px;
+    border: 1px solid rgb(81, 195, 251);
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+  .message label {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 30px;
+    float: left;
+    width: 100%;
+    height: 30px;
+  }
+  .message input {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 3px;
+    float: left;
+    width: 95%;
+    height: 29px;
+  }
+  .message textarea {
+    box-sizing: border-box;
+    text-indent: 20px;
+    line-height: 25px;
+    font-size: 20px;
+    margin-top: 3px;
+    width: 100%;
+    height: 200px;
+    float: left;
+  }
+  .submit {
+    margin: 20px 25%;
+    display: block;
+    width: 50%;
+    line-height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    float: left;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(81, 195, 251);
+    background: rgb(81, 195, 251);
+  }
+  .navigation {
+    height: 400px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 230px;
+    float: left;
+    text-align: left;
+  }
+  .navigation1 {
+    height: 400px;
+    width: 25%;
+    min-width: 230px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation2 {
+    height: 400px;
+    width: 25%;
+    min-width: 230px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation1 h3 {
+    height: 40px;
+    line-height: 40px;
+    color: rgb(150, 150, 150);
+    width: 120px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .navigation1 ul {
+    margin: 0;
+    box-sizing: border-box;
+    width: 120px;
+    height: 220px;
+    text-align: left;
+  }
+  .navigation1 li {
+    list-style: none;
+    font-size: 13px;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    text-align: left;
+  }
+  .navigation2 h3 {
+    height: 40px;
+    line-height: 40px;
+    color: rgb(150, 150, 150);
+    width: 200px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .navigation2 ul {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 220px;
+    text-align: left;
+  }
+  .navigation2 li {
+    list-style: none;
+    font-size: 13px;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    color: rgb(150, 150, 150);
+    float: left;
+  }
+  .navigation3 {
+    height: 100px;
+    width: 25%;
+    min-width: 230px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation3 h3 {
+    height: 40px;
+    line-height: 40px;
+    color: rgb(150, 150, 150);
+    width: 200px;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+/*控制头部导航样式	*/
+.h-header {
+  overflow: auto;
+  box-sizing: border-box;
+  width: 100%;
+  /* height: 100%; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* z-index: 100; */
+}
+.h-header .imglogo {
+  display: block;
+  width: 15%;
+  padding-top: 5%;
+  margin-top: 1%;
+  background: url("https://www.rayvet.cn/cdn-product/ruige2.png");
+  background-size: 100% 100%;
+  float: left;
+  margin-left: 50px;
+}
+.drawer_container {
+  display: none;
+}
+.h-header li {
+  display: block;
+  font-family: "微软雅黑";
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  float: right;
+  /* height: 40px;
+  line-height: 40px; */
+  margin: 20px 20px;
+}
+.h-header li a {
+  font-size: 17px;
+}
+.h-header ul {
+  overflow: auto;
+  display: block;
+  right: 0;
+}
+.closeBtn {
+  display: none;
+}
+.spread {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 20px;
+  display: none;
+}
+.line {
+  margin-top: 12.5px;
+  margin-left: 10px;
+  padding: 5px 0;
+  background-color: black;
+  background-clip: content-box;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  width: 30px;
+  height: 5px;
+}
+@media only screen and (max-width: 1000px) {
+  .navigation,
+  .navigation1,
+  .navigation2 {
+    width: 33%;
+  }
+  .navigation3 {
+    width: 100%;
+  }
+  .closeBtn {
+    margin: 5px 10px;
+    float: right;
+    display: block;
+  }
+  .h-header ul {
+    position: fixed;
+    margin-top: 0;
+    height: 100%;
+    width: 40%;
+    float: right;
+    background: #ffffff;
+    display: none;
+  }
+  .h-header li {
+    float: right;
+    margin: 30px 0;
+  }
+  .panel > ul {
+    display: none;
+  }
+  .spread {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 20px 20px;
+    display: block;
+  }
+  .h-header li {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    width: 100%;
+    float: left;
+  }
+  .navigation3 {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .closeBtn {
+    margin: 5px 10px;
+    float: right;
+    display: block;
+  }
+  .h-header ul {
+    position: fixed;
+    margin-top: 0;
+    height: 100%;
+    width: 40%;
+    float: right;
+    background: #ffffff;
+    display: none;
+  }
+  .h-header li {
+    float: right;
+    margin: 20px 0;
+  }
+  .navigation,
+  .navigation1 {
+    width: 50%;
+  }
+  .h-header .imglogo {
+    display: block;
+    width: 20%;
+    padding-top: 10%;
+    margin-top: 5%;
+    background: url("https://www.rayvet.cn/cdn-product/ruige2.png");
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 50px;
+  }
+  .navigation2,
+  .navigation3 {
+    width: 50%;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .closeBtn {
+    margin: 5px 10px;
+    float: right;
+    display: block;
+  }
+  .drawer_container {
+    display: block;
+  }
+  /* .ul {
+    width: 300px;
+    height: 100%;
+    position: relative;
+    animation-name: myfirst;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-play-state: running;
+    /* Safari and Chrome: */
+  /* -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: -0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+  } */
+
+  .h-header ul {
+    position: fixed;
+    margin-top: 0;
+    height: 100%;
+    width: 40%;
+    float: right;
+    background: #ffffff;
+    display: none;
+    animation: myfirst 0.1s;
+  }
+  .h-header li {
+    float: right;
+    margin: 20px 0;
+  }
+  .navigation,
+  .navigation1 {
+    width: 100%;
+    height: 300px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-left: 80px;
+  }
+  .navigation2,
+  .navigation3 {
+    width: 100%;
+    height: 225px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-left: 80px;
+  }
+  .navigation dl {
+    width: 250px;
+  }
+  .navigation dl dd {
+    width: 200px;
+  }
+  .navigation {
+    padding-bottom: 0px;
+    height: 245px;
+  }
+}
+@keyframes myfirst {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */ {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ruige pet news</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="ruige news,pet news," />
+    <meta name="description" content="ruige news, pet news" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/resect.css" />
+    <link rel="stylesheet" href="/css/public.css" />
+    <link rel="stylesheet" href="/css/newsList.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      sizes="any"
+      href="/img/r.svg"
+    />
+    <link rel="icon" sizes="any" href="/img/r.svg" />
+  </head>
+  <body>
+    <%- include('head') %>
+    <div class="new-list-top"></div>
+    <div class="news_list_content">
+      <a href="newsList/<%= newsList[0].title.replace(/\s/g, '-') %>">
+        <div class="top_news">
+          <img
+            class="left_img"
+            alt="<%=newsList[0].title + ' ' + newsList[0].titleImg.substring(0,newsList[0].titleImg.lastIndexOf('.') ) %>"
+            src="<%=cdn.newsUrl +  newsList[0].title.replace(/\s/g, '-') + '/' + newsList[0].titleImg %>"
+          />
+          <div class="right_content">
+            <div class="right_content_header">
+              <%= newsList[0].title %>
+            </div>
+            <div class="right_content_content">
+              <%= newsList[0].content.replace(/<\/?.+?\/?>/g,
+              '').replace(/&nbsp/g, '') %>
+            </div>
+            <div class="right_content_time">
+              <%= newsList[0].creationTimestamp %>
+            </div>
+          </div>
+        </div>
+      </a>
+      <ul>
+        <% for(var i = 1; i < newsList.length ; i++){ %>
+        <a href="newsList/<%= newsList[i].title.replace(/\s/g, '-') %>">
+          <li>
+            <img
+              class="news_img"
+              alt="<%=newsList[i].title + ' ' + newsList[i].titleImg.substring(0,newsList[i].titleImg.lastIndexOf('.') ) %>"
+              src="<%=cdn.newsUrl +  newsList[i].title.replace(/\s/g, '-') + '/' + newsList[i].titleImg %>"
+            />
+            <div class="news_content">
+              <p class="news_content_title">
+                <%= newsList[i].title %>
+              </p>
+              <p class="news_content_content">
+                <span class="ellipsis">
+                  <%= newsList[i].content.replace(/<\/?.+?\/?>/g,
+                  '').replace(/&nbsp/g, '') %>
+                </span>
+              </p>
+
+              <p class="news_content_time">
+                <%= newsList[i].creationTimestamp %>
+              </p>
+            </div>
+          </li>
+        </a>
+        <% } %>
+      </ul>
+    </div>
+    <%- include('foot') %>
+  </body>
+</html>
